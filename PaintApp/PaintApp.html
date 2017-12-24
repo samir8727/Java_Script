@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="en_us">
+        <title>Paint App</title>
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Vast+Shadow" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+        <link rel="stylesheet" href="PaintApp.css">
+        
+    </head>
+    
+    
+    
+    
+    <body>
+        <div id="menuBar">
+            <h1 id="name">Simple Paint App</h1>
+        </div>
+        
+       
+        <canvas id="canvas" height="450" width="780"></canvas>
+        
+        <br/>
+        
+        <div id="menuContainer">
+            
+            <button id="clear" class="button">Clear</button>
+            
+        </div>
+        
+        <div id="leftMenu">
+            
+            <h3 ><lebel id="colorFill">Color Fill: <input id="fillBox" type="checkbox" checked="checked"></lebel></h3>
+            
+            <div class="drawSafe">
+                
+                <h4><lebel>line Width: <input id="linewidth" type="range" step="1" min="1" max="50"></lebel></h4>
+
+                <p>Selected Line Width is:  <span id="lineWidthValue">0</span> </p>
+            
+            </div>
+            
+            <div class="drawSafe">
+                
+                <h4>Choose Shapes</h4>
+                <h4><input type="radio" name="shape" value="triAngle" checked="checked">Traiangle</h4>
+                <h4><input type="radio" name="shape" value="polygon">Polygon</h4>
+                <h4><input type="radio" name="shape" value="circle">Circle</h4>
+                <h4><input type="radio" name="shape" value="line">Line</h4>
+                
+            </div>
+            
+            <h4><lebel>Polygon sides: <input id="polygonSides" type="range" step="1" min="3" max="10"></lebel></h4>
+
+            <p>Selected Sides Value is: <span id="sidesValue">0</span></p>
+
+            <h4><lebel>Polygon Angle: <input id="polygonAngle" type="range" step="22.5" min="0" max="90"></lebel></h4>
+
+            <p>Selected Angle Value is: <span id="angleValue">0</span></p>
+            
+        </div>
+        
+        <div id="rightMenu">
+            <div>
+
+                <h4><input type="radio" name="fillColor" value="automatc" checked="checked">Fill Color Automatic</h4>
+                <h4><input type="radio" name="fillColor" value="manual">Fill color Manually</h4>
+
+            </div>
+
+            <div id="insideRightMenu">
+
+                <h4><lebel>Choose to fill Color : <input id="fillColor" type="color" value="#39ea47"></lebel></h4>
+
+            </div>
+
+            
+            <div>
+
+                <h4><input type="radio" name="stokeColor" value="automatc" checked="checked"> Stroke Color Automatic</h4>
+
+                <h4><input type="radio" name="stokeColor" value="manual"> Stroke color Manually</h4>
+
+            </div>
+
+            <div id="insideRightMenu">
+
+                <h4><lebel>Choose to Stroke Color <input id="stokeColor" type="color" value="#cc4471"></lebel></h4>
+
+            </div>
+
+            <div id="insideRightMenu">
+
+                <h4><lebel>BackGround Color  <input id="canvasColor" type="color" value="#ffffff"></lebel></h4>
+
+            </div>
+            
+            <div id="insideRightMenu">
+
+                <h2>Line Caps</h2>
+
+                <h4><input type="radio" name="lineCap" value="butt" checked="checked"> butt</h4>
+
+                <h4><input type="radio" name="lineCap" value="round" > round </h4>
+
+                <h4><input type="radio" name="lineCap" value="meter"> meter</h4>
+
+            </div>
+            
+                
+        </div>
+       
+        
+        
+        <script src="PaintApp.js"></script>
+
+    </body>
+
+
+    
+</html>
